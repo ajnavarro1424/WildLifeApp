@@ -4,7 +4,15 @@ class SightingsController < ApplicationController
   # GET /sightings
   # GET /sightings.json
   def index
-    @sightings = Sighting.all
+    if params[:start_date].present?
+      @sightings = Sighting.where(date: params[:start_date]..params[:end_date])
+      render('sightings/index.html.erb')
+    elsif params[:region].present?
+      @sightings = Sighting.where(region: params[:region])
+      render('sightings/index.html.erb')
+    else
+      @sightings = Sighting.all
+    end
   end
 
   # GET /sightings/1
@@ -22,6 +30,7 @@ class SightingsController < ApplicationController
       [animal.name, animal.id]
     end
 
+
   end
 
   # GET /sightings/1/edit
@@ -35,6 +44,9 @@ class SightingsController < ApplicationController
   # POST /sightings.json
   def create
     @sighting = Sighting.new(sighting_params)
+    @animals_for_select = Animal.all.map do |animal|
+      [animal.name, animal.id]
+    end
 
     respond_to do |format|
       if @sighting.save
@@ -44,6 +56,7 @@ class SightingsController < ApplicationController
         format.html { render :new }
         format.json { render json: @sighting.errors, status: :unprocessable_entity }
       end
+
     end
   end
 

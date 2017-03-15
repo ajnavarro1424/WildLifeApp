@@ -16,10 +16,11 @@
 </p>
 
 <p>
+  <strong>Sightings:</strong>
   <ul>
     <% @animal.sightings.each do |sighting| %>
     <li>
-       <%=sighting.date%>|<%=sighting.time%>|<%=sighting.longitude%>|<%=sighting.latitude%>
+       <%=sighting.date%> | <%=sighting.time.strftime("%I:%M%P")%> | <%=sighting.longitude%> | <%=sighting.latitude%>
     </li>
     <%end%>
   </ul>

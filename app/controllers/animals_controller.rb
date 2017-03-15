@@ -5,6 +5,7 @@ class AnimalsController < ApplicationController
   # GET /animals.json
   def index
     @animals = Animal.all
+    # @count = Animal.count(:conditions => "name = Bear")
   end
 
   # GET /animals/1

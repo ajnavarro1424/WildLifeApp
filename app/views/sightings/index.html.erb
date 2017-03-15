@@ -2,6 +2,31 @@
 
 <h1>Listing Sightings</h1>
 
+<h2>Filters:</h2>
+<h3>Date</h3>
+<form action="/sightings" method="get">
+  <label for="start_date">Start Date</label>
+  <input id="start_date" type="text" name="start_date">
+  <label for="end_date">End Date</label>
+  <input id="end_date" type="text" name="end_date">
+  <button>Apply Date Filter</button>
+</form>
+
+<h3>Region</h3>
+<form action="/sightings" method="get">
+  <label for="region">Region</label>
+  <select name="region">
+    <option value="Downtown Portland">Downtown Portland</option>
+    <option value="OldTown ChinaTown">OldTown ChinaTown</option>
+    <option value="Pearl District">Pearl District</option>
+    <option value="Lloyd District">Lloyd District</option>
+    <option value="Mississippi/Williams">Mississippi/Williams</option>
+</select>
+  <button>Apply Region Filter</button>
+</form>
+<br>
+<%=button_to "Remove Filter", sightings_path, method: :get %>
+<br>
 <table>
   <thead>
     <tr>
@@ -20,7 +45,7 @@
       <tr>
         <td><%= sighting.animal.name %></td>
         <td><%= sighting.date %></td>
-        <td><%= sighting.time %></td>
+        <td><%= sighting.time.strftime("%I:%M%P") %></td>
         <td><%= sighting.latitude %></td>
         <td><%= sighting.longitude %></td>
         <td><%= sighting.region %></td>
