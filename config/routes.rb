@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  resources :sightings
+  resources :sightings do
+    get :get_sightings, on: :collection
+  end
   resources :animals
+
+  get 'calendar' => 'sightings#calendar'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
