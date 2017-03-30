@@ -10127,3 +10127,960 @@ Processing by SightingsController#get_sightings as JSON
   [1m[35mCACHE (0.1ms)[0m  SELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1  [["id", 5]]
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT 1[0m  [["id", 6]]
 Completed 200 OK in 53ms (Views: 0.1ms | ActiveRecord: 23.5ms)
+Started GET "/" for ::1 at 2017-03-23 13:10:56 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/activerecord-5.0.1/lib/active_record/railtie.rb:113)
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.1) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.1) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/alexandernavarro/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/alexandernavarro/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/alexandernavarro/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+  Rendering /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (93.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_alexandernavarro__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___2512864093936129655_70137601547820 at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.0ms)
+  Rendering /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/alexandernavarro/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (148.0ms)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/activerecord-5.0.1/lib/active_record/railtie.rb:113)
+  [1m[35m (13.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (19.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6144968838134816445);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAnimals (20170314214953)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class CreateAnimals < ActiveRecord::Migration[4.2] (called from block in execute_migration_in_transaction at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/activerecord-5.0.1/lib/active_record/migration.rb:1212)
+  [1m[35m (20.4ms)[0m  [1m[35mCREATE TABLE "animals" ("id" serial primary key, "name" character varying, "latin_name" character varying, "kingdom" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170314214953"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSightings (20170314215959)
+  [1m[35m (5.7ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class CreateSightings < ActiveRecord::Migration[4.2] (called from block in execute_migration_in_transaction at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/activerecord-5.0.1/lib/active_record/migration.rb:1212)
+  [1m[35m (9.7ms)[0m  [1m[35mCREATE TABLE "sightings" ("id" serial primary key, "animal_id" integer, "date" date, "time" time, "latitude" character varying, "longitude" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_37c051df87"
+FOREIGN KEY ("animal_id")
+  REFERENCES "animals" ("id")
+)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE  INDEX  "index_sightings_on_animal_id" ON "sightings"  ("animal_id")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170314215959"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddRegionToSightings (20170314225216)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddRegionToSightings < ActiveRecord::Migration[4.2] (called from block in execute_migration_in_transaction at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/activerecord-5.0.1/lib/active_record/migration.rb:1212)
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "sightings" ADD "region" character varying[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170314225216"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddCountToSightings (20170315180746)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddCountToSightings < ActiveRecord::Migration[4.2] (called from block in execute_migration_in_transaction at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/activerecord-5.0.1/lib/active_record/migration.rb:1212)
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "sightings" ADD "count" integer[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170315180746"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveCountFromSightings (20170315181939)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class RemoveCountFromSightings < ActiveRecord::Migration[4.2] (called from block in execute_migration_in_transaction at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/activerecord-5.0.1/lib/active_record/migration.rb:1212)
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "sightings" DROP "count"[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170315181939"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangeLongitudeInSightings (20170315213434)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class ChangeLongitudeInSightings < ActiveRecord::Migration[4.2] (called from block in execute_migration_in_transaction at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/activerecord-5.0.1/lib/active_record/migration.rb:1212)
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "sightings" DROP "longitude"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "sightings" ADD "longitude" float[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170315213434"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangeLatitudeInSightings (20170315213900)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class ChangeLatitudeInSightings < ActiveRecord::Migration[4.2] (called from block in execute_migration_in_transaction at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/activerecord-5.0.1/lib/active_record/migration.rb:1212)
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "sightings" DROP "latitude"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "sightings" ADD "latitude" float[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170315213900"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-23 20:11:10 UTC], ["updated_at", 2017-03-23 20:11:10 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6144968838134816445)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for ::1 at 2017-03-23 13:11:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 21ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals" for ::1 at 2017-03-23 16:06:29 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/activerecord-5.0.1/lib/active_record/railtie.rb:113)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.8ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 732ms (Views: 708.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/calendar.self-3c935b300f3f4102fb8e9f8d778d796e1633102ef859422ce8df2136753405dc.css?body=1" for ::1 at 2017-03-23 16:06:30 -0700
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2017-03-23 16:06:30 -0700
+Started GET "/assets/fullcalendar.self-9414ccf809e9f061fea53c05a4a7522f620946a252da361d14a6abd7bc999240.css?body=1" for ::1 at 2017-03-23 16:06:30 -0700
+Started GET "/assets/sightings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-23 16:06:30 -0700
+Started GET "/assets/animals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-23 16:06:30 -0700
+Started GET "/assets/scaffolds.self-a93ff68d146bc737a3724b5fe566990aa81cc53c8c137141497ff9a9da46c3a0.css?body=1" for ::1 at 2017-03-23 16:06:30 -0700
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-03-23 16:06:30 -0700
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-03-23 16:06:30 -0700
+Started GET "/assets/fullcalendar.self-ff7bc06c41d0abf9287a459a84a139ac5747b467cec171295d945641fe997535.js?body=1" for ::1 at 2017-03-23 16:06:30 -0700
+Started GET "/assets/moment.self-34da66f0997d145341cfb3fc71c794ea32b4c6affa3ff5d9e7e5107170125d1c.js?body=1" for ::1 at 2017-03-23 16:06:30 -0700
+Started GET "/assets/animals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-23 16:06:30 -0700
+Started GET "/assets/calendar.self-54bdbc607450d99786b787fe7fe0a6e100914ffa4e2009aadca0587838db5b1f.js?body=1" for ::1 at 2017-03-23 16:06:30 -0700
+Started GET "/assets/sightings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2017-03-23 16:06:30 -0700
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2017-03-23 16:06:30 -0700
+Started GET "/animals/new" for ::1 at 2017-03-23 16:06:37 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/_form.html.erb (28.5ms)
+  Rendered animals/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 81ms (Views: 70.2ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/animals" for ::1 at 2017-03-23 16:06:56 -0700
+Processing by AnimalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tujRbn2ERrws46yUh1pxVr+EVMsYLozR+iNRTBXHb0MM5PceDda/DJx0V4nCaJedUvwAg79oAKEr9aX+GQoFCw==", "animal"=>{"name"=>"Bear ", "latin_name"=>"Latin Bear", "kingdom"=>"Beardom"}, "commit"=>"Create Animal"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "animals" ("name", "latin_name", "kingdom", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bear "], ["latin_name", "Latin Bear"], ["kingdom", "Beardom"], ["created_at", 2017-03-23 23:06:56 UTC], ["updated_at", 2017-03-23 23:06:56 UTC]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/animals/1
+Completed 302 Found in 17ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/animals/1" for ::1 at 2017-03-23 16:06:56 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+DEPRECATION WARNING: Time columns will become time zone aware in Rails 5.1. This
+still causes `String`s to be parsed as if they were in `Time.zone`,
+and `Time`s to be converted to `Time.zone`.
+
+To keep the old behavior, you must add the following to your initializer:
+
+    config.active_record.time_zone_aware_types = [:datetime]
+
+To silence this deprecation warning, add the following:
+
+    config.active_record.time_zone_aware_types = [:datetime, :time]
+ (called from block (2 levels) in inherited at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/activerecord-5.0.1/lib/active_record/attribute_methods/time_zone_conversion.rb:78)
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  Rendered animals/show.html.erb within layouts/application (53.2ms)
+Completed 200 OK in 96ms (Views: 85.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/animals" for ::1 at 2017-03-23 16:07:06 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.7ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  Rendered animals/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/animals/1" for ::1 at 2017-03-23 16:07:08 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  Rendered animals/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 30ms (Views: 25.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sightings/new?animal_id=1" for ::1 at 2017-03-23 16:07:09 -0700
+Processing by SightingsController#new as HTML
+  Parameters: {"animal_id"=>"1"}
+  [1m[36mAnimal Load (0.7ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendering sightings/new.html.erb within layouts/application
+  Rendered sightings/_form.html.erb (14.3ms)
+  Rendered sightings/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 56ms (Views: 37.5ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/sightings" for ::1 at 2017-03-23 16:07:17 -0700
+Processing by SightingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tpBPq75bkk5+/3wIEi3nH85/5Ti+W2XfLK3IW+zxzsIMnGnbzglr/s5ohxVXHwHUIwexcBkd6a/9ezzp4Dykig==", "sighting"=>{"animal_id"=>"1", "date(1i)"=>"2017", "date(2i)"=>"3", "date(3i)"=>"23", "time(1i)"=>"2017", "time(2i)"=>"3", "time(3i)"=>"23", "time(4i)"=>"23", "time(5i)"=>"07", "latitude"=>"12", "longitude"=>"32", "region"=>"Downtown Portland"}, "commit"=>"Create Sighting"}
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "sightings" ("animal_id", "date", "time", "created_at", "updated_at", "region", "longitude", "latitude") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["animal_id", 1], ["date", Thu, 23 Mar 2017], ["time", 2017-03-23 23:07:00 UTC], ["created_at", 2017-03-23 23:07:17 UTC], ["updated_at", 2017-03-23 23:07:17 UTC], ["region", "Downtown Portland"], ["longitude", 32.0], ["latitude", 12.0]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/sightings/1
+Completed 302 Found in 21ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/sightings/1" for ::1 at 2017-03-23 16:07:17 -0700
+Processing by SightingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT  "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sightings/show.html.erb within layouts/application
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sightings/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sightings/1/edit" for ::1 at 2017-03-23 16:07:20 -0700
+Processing by SightingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSighting Load (0.5ms)[0m  [1m[34mSELECT  "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendering sightings/edit.html.erb within layouts/application
+  Rendered sightings/_form.html.erb (8.0ms)
+  Rendered sightings/edit.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sightings" for ::1 at 2017-03-23 16:07:22 -0700
+Processing by SightingsController#index as HTML
+  Rendering sightings/index.html.erb within layouts/application
+  [1m[36mSighting Load (0.6ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sightings/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/animals" for ::1 at 2017-03-23 16:07:28 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  Rendered animals/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/animals/new" for ::1 at 2017-03-23 16:09:03 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/_form.html.erb (2.9ms)
+  Rendered animals/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals" for ::1 at 2017-03-23 16:09:04 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  Rendered animals/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/animals/new" for ::1 at 2017-03-23 16:09:14 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/_form.html.erb (1.8ms)
+  Rendered animals/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/animals" for ::1 at 2017-03-23 16:09:23 -0700
+Processing by AnimalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DYswlZ6bxXgvleFCOV3cssVKikN9EmHSltyIm7SVZ8G3hxbl7sk8yJ8CGl98bzp5KDLeC9pU7aJHCnwpuFgNiQ==", "animal"=>{"name"=>"Duck", "latin_name"=>"Latin Duck", "kingdom"=>"Duckdom"}, "commit"=>"Create Animal"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "animals" ("name", "latin_name", "kingdom", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Duck"], ["latin_name", "Latin Duck"], ["kingdom", "Duckdom"], ["created_at", 2017-03-23 23:09:23 UTC], ["updated_at", 2017-03-23 23:09:23 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/animals/2
+Completed 302 Found in 7ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/animals/2" for ::1 at 2017-03-23 16:09:23 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  [1m[36mSighting Load (3.2ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 2]]
+  Rendered animals/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 63ms (Views: 56.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/sightings/new?animal_id=2" for ::1 at 2017-03-23 16:09:24 -0700
+Processing by SightingsController#new as HTML
+  Parameters: {"animal_id"=>"2"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendering sightings/new.html.erb within layouts/application
+  Rendered sightings/_form.html.erb (4.9ms)
+  Rendered sightings/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/sightings" for ::1 at 2017-03-23 16:09:45 -0700
+Processing by SightingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KlnuKRErp6VFkdX+H8WNoHHghkNzVhh3LEoZx4ABK5WQVchZYXleFfUGLuNa92trnJjSC9QQlAf9nO11jMxB3Q==", "sighting"=>{"animal_id"=>"2", "date(1i)"=>"2014", "date(2i)"=>"2", "date(3i)"=>"16", "time(1i)"=>"2017", "time(2i)"=>"3", "time(3i)"=>"23", "time(4i)"=>"16", "time(5i)"=>"09", "latitude"=>"54.4", "longitude"=>"78.2", "region"=>"Pearl District"}, "commit"=>"Create Sighting"}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "sightings" ("animal_id", "date", "time", "created_at", "updated_at", "region", "longitude", "latitude") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["animal_id", 2], ["date", Sun, 16 Feb 2014], ["time", 2017-03-23 16:09:00 UTC], ["created_at", 2017-03-23 23:09:45 UTC], ["updated_at", 2017-03-23 23:09:45 UTC], ["region", "Pearl District"], ["longitude", 78.2], ["latitude", 54.4]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/sightings/2
+Completed 302 Found in 15ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/sightings/2" for ::1 at 2017-03-23 16:09:45 -0700
+Processing by SightingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSighting Load (0.2ms)[0m  [1m[34mSELECT  "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sightings/show.html.erb within layouts/application
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered sightings/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 33ms (Views: 30.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sightings" for ::1 at 2017-03-23 16:09:47 -0700
+Processing by SightingsController#index as HTML
+  Rendering sightings/index.html.erb within layouts/application
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered sightings/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sightings/new" for ::1 at 2017-03-23 16:09:53 -0700
+Processing by SightingsController#new as HTML
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendering sightings/new.html.erb within layouts/application
+  Rendered sightings/_form.html.erb (4.9ms)
+  Rendered sightings/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 32ms (Views: 28.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/sightings" for ::1 at 2017-03-23 16:10:18 -0700
+Processing by SightingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"goT+pG+OUgJjGR5CPtx2chqwBpxlqKsoWkjCkZz07BM4iNjUH9yrstOO5V977pC598hS1MLuJ1iLnjYjkDmGWw==", "sighting"=>{"animal_id"=>"2", "date(1i)"=>"2013", "date(2i)"=>"9", "date(3i)"=>"20", "time(1i)"=>"2017", "time(2i)"=>"3", "time(3i)"=>"23", "time(4i)"=>"18", "time(5i)"=>"20", "latitude"=>"6.90", "longitude"=>"457", "region"=>"Pearl District"}, "commit"=>"Create Sighting"}
+  [1m[36mAnimal Load (1.2ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "sightings" ("animal_id", "date", "time", "created_at", "updated_at", "region", "longitude", "latitude") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["animal_id", 2], ["date", Fri, 20 Sep 2013], ["time", 2017-03-23 18:20:00 UTC], ["created_at", 2017-03-23 23:10:18 UTC], ["updated_at", 2017-03-23 23:10:18 UTC], ["region", "Pearl District"], ["longitude", 457.0], ["latitude", 6.9]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/sightings/3
+Completed 302 Found in 10ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/sightings/3" for ::1 at 2017-03-23 16:10:18 -0700
+Processing by SightingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT  "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering sightings/show.html.erb within layouts/application
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered sightings/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sightings" for ::1 at 2017-03-23 16:10:21 -0700
+Processing by SightingsController#index as HTML
+  Rendering sightings/index.html.erb within layouts/application
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered sightings/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sightings/new" for ::1 at 2017-03-23 16:11:59 -0700
+Processing by SightingsController#new as HTML
+  [1m[36mAnimal Load (0.7ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendering sightings/new.html.erb within layouts/application
+  Rendered sightings/_form.html.erb (4.5ms)
+  Rendered sightings/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 32ms (Views: 28.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/sightings" for ::1 at 2017-03-23 16:12:15 -0700
+Processing by SightingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rCpf7+vXVPFrV+Sd+T7a2O9xfhHiYJ2C6DoEbzFI2hYWJnmfm4WtQdvAH4C8DDwTAgkqWUUmEfI57PDdPYWwXg==", "sighting"=>{"animal_id"=>"1", "date(1i)"=>"2014", "date(2i)"=>"12", "date(3i)"=>"25", "time(1i)"=>"2017", "time(2i)"=>"3", "time(3i)"=>"23", "time(4i)"=>"23", "time(5i)"=>"11", "latitude"=>"34.09", "longitude"=>"54.46", "region"=>"OldTown ChinaTown"}, "commit"=>"Create Sighting"}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "sightings" ("animal_id", "date", "time", "created_at", "updated_at", "region", "longitude", "latitude") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["animal_id", 1], ["date", Thu, 25 Dec 2014], ["time", 2017-03-23 23:11:00 UTC], ["created_at", 2017-03-23 23:12:15 UTC], ["updated_at", 2017-03-23 23:12:15 UTC], ["region", "OldTown ChinaTown"], ["longitude", 54.46], ["latitude", 34.09]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/sightings/4
+Completed 302 Found in 10ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/sightings/4" for ::1 at 2017-03-23 16:12:15 -0700
+Processing by SightingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT  "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sightings/show.html.erb within layouts/application
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sightings/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sightings" for ::1 at 2017-03-23 16:13:08 -0700
+Processing by SightingsController#index as HTML
+  Rendering sightings/index.html.erb within layouts/application
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sightings/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/calendar" for ::1 at 2017-03-23 16:13:27 -0700
+Processing by SightingsController#calendar as HTML
+  Rendering sightings/calendar.html.erb within layouts/application
+  Rendered sightings/calendar.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sightings/get_sightings?start=2017-02-26&end=2017-04-09&_=1490310807772" for ::1 at 2017-03-23 16:13:27 -0700
+Processing by SightingsController#get_sightings as JSON
+  Parameters: {"start"=>"2017-02-26", "end"=>"2017-04-09", "_"=>"1490310807772"}
+  [1m[36mSighting Load (1.6ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/sightings" for ::1 at 2017-03-23 16:13:37 -0700
+Processing by SightingsController#index as HTML
+  Rendering sightings/index.html.erb within layouts/application
+  [1m[36mSighting Load (0.6ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sightings/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/sightings/get_sightings?start=2017-02-26&end=2017-04-09&_=1490311146036" for ::1 at 2017-03-23 16:19:06 -0700
+Processing by SightingsController#get_sightings as JSON
+  Parameters: {"start"=>"2017-02-26", "end"=>"2017-04-09", "_"=>"1490311146036"}
+  [1m[36mSighting Load (0.5ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-30 14:30:13 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/activerecord-5.0.1/lib/active_record/railtie.rb:113)
+  [1m[36mActiveRecord::SchemaMigration Load (12.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (5.1ms)
+Completed 200 OK in 33ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-30 14:30:24 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (4.6ms)
+Completed 200 OK in 14ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals" for ::1 at 2017-03-30 14:30:29 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (18.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+DEPRECATION WARNING: Time columns will become time zone aware in Rails 5.1. This
+still causes `String`s to be parsed as if they were in `Time.zone`,
+and `Time`s to be converted to `Time.zone`.
+
+To keep the old behavior, you must add the following to your initializer:
+
+    config.active_record.time_zone_aware_types = [:datetime]
+
+To silence this deprecation warning, add the following:
+
+    config.active_record.time_zone_aware_types = [:datetime, :time]
+ (called from block (2 levels) in inherited at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/activerecord-5.0.1/lib/active_record/attribute_methods/time_zone_conversion.rb:78)
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 2]]
+  Rendered animals/index.html.erb within layouts/application (106.0ms)
+Completed 200 OK in 515ms (Views: 458.0ms | ActiveRecord: 44.2ms)
+
+
+Started GET "/assets/calendar.self-3c935b300f3f4102fb8e9f8d778d796e1633102ef859422ce8df2136753405dc.css?body=1" for ::1 at 2017-03-30 14:30:30 -0700
+Started GET "/assets/fullcalendar.self-9414ccf809e9f061fea53c05a4a7522f620946a252da361d14a6abd7bc999240.css?body=1" for ::1 at 2017-03-30 14:30:30 -0700
+Started GET "/assets/animals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-30 14:30:30 -0700
+Started GET "/assets/sightings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2017-03-30 14:30:30 -0700
+Started GET "/assets/scaffolds.self-a93ff68d146bc737a3724b5fe566990aa81cc53c8c137141497ff9a9da46c3a0.css?body=1" for ::1 at 2017-03-30 14:30:30 -0700
+Started GET "/assets/calendar.self-54bdbc607450d99786b787fe7fe0a6e100914ffa4e2009aadca0587838db5b1f.js?body=1" for ::1 at 2017-03-30 14:30:30 -0700
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2017-03-30 14:30:30 -0700
+Started GET "/animals/new" for ::1 at 2017-03-30 14:30:43 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/_form.html.erb (33.2ms)
+  Rendered animals/new.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 87ms (Views: 82.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals" for ::1 at 2017-03-30 14:30:45 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (1.8ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 2]]
+  Rendered animals/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 44ms (Views: 37.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/animals" for ::1 at 2017-03-30 14:32:31 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+DEPRECATION WARNING: Time columns will become time zone aware in Rails 5.1. This
+still causes `String`s to be parsed as if they were in `Time.zone`,
+and `Time`s to be converted to `Time.zone`.
+
+To keep the old behavior, you must add the following to your initializer:
+
+    config.active_record.time_zone_aware_types = [:datetime]
+
+To silence this deprecation warning, add the following:
+
+    config.active_record.time_zone_aware_types = [:datetime, :time]
+ (called from block (2 levels) in inherited at /Users/alexandernavarro/.rvm/gems/ruby-2.4.0@global/gems/activerecord-5.0.1/lib/active_record/attribute_methods/time_zone_conversion.rb:78)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 2]]
+  Rendered animals/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 42ms (Views: 35.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-03-30 14:32:35 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 2]]
+  Rendered animals/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/animals/new" for ::1 at 2017-03-30 14:32:38 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/_form.html.erb (2.6ms)
+  Rendered animals/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/animals" for ::1 at 2017-03-30 14:32:54 -0700
+Processing by AnimalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6tcTDRayZG20pZaLrSg1fX8FAahm/XBgalByEt6VrF0dRu/KIED2maZQVzKOqUEK8PXzi8XAFI2IPbpn/D2wyA==", "animal"=>{"name"=>"Double Bear", "latin_name"=>"Bear Fire", "kingdom"=>"The Iron Throne"}, "commit"=>"Create Animal"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (26.5ms)[0m  [1m[32mINSERT INTO "animals" ("name", "latin_name", "kingdom", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Double Bear"], ["latin_name", "Bear Fire"], ["kingdom", "The Iron Throne"], ["created_at", 2017-03-30 21:32:54 UTC], ["updated_at", 2017-03-30 21:32:54 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/animals/3
+Completed 302 Found in 33ms (ActiveRecord: 28.7ms)
+
+
+Started GET "/animals/3" for ::1 at 2017-03-30 14:32:54 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAnimal Load (5.9ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 3]]
+  Rendered animals/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 40ms (Views: 28.0ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/sightings/new?animal_id=3" for ::1 at 2017-03-30 14:32:56 -0700
+Processing by SightingsController#new as HTML
+  Parameters: {"animal_id"=>"3"}
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendering sightings/new.html.erb within layouts/application
+  Rendered sightings/_form.html.erb (22.1ms)
+  Rendered sightings/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 69ms (Views: 50.6ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/sightings" for ::1 at 2017-03-30 14:33:15 -0700
+Processing by SightingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GAfbJDhuKBQrZaSDbT08mi6Ble0v5ZN50ROS/zaoEkTvlifjDpy64DmQZTpOvEjtoXFnzozY95QzflqKFAAO0Q==", "sighting"=>{"animal_id"=>"3", "date(1i)"=>"2014", "date(2i)"=>"3", "date(3i)"=>"30", "time(1i)"=>"2017", "time(2i)"=>"3", "time(3i)"=>"30", "time(4i)"=>"21", "time(5i)"=>"32", "latitude"=>"21.43", "longitude"=>"23.67", "region"=>"Pearl District"}, "commit"=>"Create Sighting"}
+  [1m[36mAnimal Load (2.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.2ms)[0m  [1m[32mINSERT INTO "sightings" ("animal_id", "date", "time", "created_at", "updated_at", "region", "longitude", "latitude") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["animal_id", 3], ["date", Sun, 30 Mar 2014], ["time", 2017-03-30 21:32:00 UTC], ["created_at", 2017-03-30 21:33:15 UTC], ["updated_at", 2017-03-30 21:33:15 UTC], ["region", "Pearl District"], ["longitude", 23.67], ["latitude", 21.43]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/sightings/5
+Completed 302 Found in 40ms (ActiveRecord: 28.9ms)
+
+
+Started GET "/sightings/5" for ::1 at 2017-03-30 14:33:15 -0700
+Processing by SightingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSighting Load (0.8ms)[0m  [1m[34mSELECT  "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering sightings/show.html.erb within layouts/application
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered sightings/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 33ms (Views: 27.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/sightings" for ::1 at 2017-03-30 14:33:19 -0700
+Processing by SightingsController#index as HTML
+  Rendering sightings/index.html.erb within layouts/application
+  [1m[36mSighting Load (0.6ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered sightings/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 42ms (Views: 38.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/animals" for ::1 at 2017-03-30 14:33:37 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 3]]
+  Rendered animals/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/sightings" for ::1 at 2017-03-30 14:33:38 -0700
+Processing by SightingsController#index as HTML
+  Rendering sightings/index.html.erb within layouts/application
+  [1m[36mSighting Load (0.8ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered sightings/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/calendar" for ::1 at 2017-03-30 14:33:40 -0700
+Processing by SightingsController#calendar as HTML
+  Rendering sightings/calendar.html.erb within layouts/application
+  Rendered sightings/calendar.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sightings/get_sightings?start=2017-02-26&end=2017-04-09&_=1490909620355" for ::1 at 2017-03-30 14:33:40 -0700
+Processing by SightingsController#get_sightings as JSON
+  Parameters: {"start"=>"2017-02-26", "end"=>"2017-04-09", "_"=>"1490909620355"}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/calendar" for ::1 at 2017-03-30 14:34:17 -0700
+Processing by SightingsController#calendar as HTML
+  Rendering sightings/calendar.html.erb within layouts/application
+  Rendered sightings/calendar.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 62ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/calendar.self-a929e7e75a80814e09fcbd723723d5d5f275fd90703f1a0a31345406e0fb8436.css?body=1" for ::1 at 2017-03-30 14:34:18 -0700
+Started GET "/sightings/get_sightings?start=2017-02-26&end=2017-04-09&_=1490909658078" for ::1 at 2017-03-30 14:34:18 -0700
+Processing by SightingsController#get_sightings as JSON
+  Parameters: {"start"=>"2017-02-26", "end"=>"2017-04-09", "_"=>"1490909658078"}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/sightings/get_sightings?start=2017-03-26&end=2017-05-07&_=1490909658079" for ::1 at 2017-03-30 14:34:24 -0700
+Processing by SightingsController#get_sightings as JSON
+  Parameters: {"start"=>"2017-03-26", "end"=>"2017-05-07", "_"=>"1490909658079"}
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/sightings/get_sightings?start=2017-04-30&end=2017-06-11&_=1490909658080" for ::1 at 2017-03-30 14:34:25 -0700
+Processing by SightingsController#get_sightings as JSON
+  Parameters: {"start"=>"2017-04-30", "end"=>"2017-06-11", "_"=>"1490909658080"}
+  [1m[36mSighting Load (0.5ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/sightings/get_sightings?start=2017-03-26&end=2017-05-07&_=1490909658081" for ::1 at 2017-03-30 14:34:26 -0700
+Processing by SightingsController#get_sightings as JSON
+  Parameters: {"start"=>"2017-03-26", "end"=>"2017-05-07", "_"=>"1490909658081"}
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/sightings" for ::1 at 2017-03-30 14:34:27 -0700
+Processing by SightingsController#index as HTML
+  Rendering sightings/index.html.erb within layouts/application
+  [1m[36mSighting Load (0.7ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered sightings/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 36ms (Views: 33.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/sightings?start_date=2015-03-05&end_date=2017-03-30" for ::1 at 2017-03-30 14:35:09 -0700
+Processing by SightingsController#index as HTML
+  Parameters: {"start_date"=>"2015-03-05", "end_date"=>"2017-03-30"}
+  Rendering sightings/index.html.erb within layouts/application
+  [1m[36mSighting Load (0.5ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE ("sightings"."date" BETWEEN $1 AND $2)[0m  [["date", Thu, 05 Mar 2015], ["date", Thu, 30 Mar 2017]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sightings/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sightings" for ::1 at 2017-03-30 14:35:12 -0700
+Processing by SightingsController#index as HTML
+  Rendering sightings/index.html.erb within layouts/application
+  [1m[36mSighting Load (0.7ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered sightings/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 46ms (Views: 42.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/sightings" for ::1 at 2017-03-30 14:36:26 -0700
+Processing by SightingsController#index as HTML
+  Rendering sightings/index.html.erb within layouts/application
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered sightings/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 50ms (Views: 47.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/calendar.self-9934fdc6143bebd5b798be8ef80af19c1c746ae73440658ce62e4cf6f9de4418.css?body=1" for ::1 at 2017-03-30 14:36:26 -0700
+Started GET "/calendar" for ::1 at 2017-03-30 14:36:27 -0700
+Processing by SightingsController#calendar as HTML
+  Rendering sightings/calendar.html.erb within layouts/application
+  Rendered sightings/calendar.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sightings/get_sightings?start=2017-02-26&end=2017-04-09&_=1490909787447" for ::1 at 2017-03-30 14:36:27 -0700
+Processing by SightingsController#get_sightings as JSON
+  Parameters: {"start"=>"2017-02-26", "end"=>"2017-04-09", "_"=>"1490909787447"}
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/calendar" for ::1 at 2017-03-30 14:36:41 -0700
+Processing by SightingsController#calendar as HTML
+  Rendering sightings/calendar.html.erb within layouts/application
+  Rendered sightings/calendar.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/calendar.self-c7195510220fc81902964d8bfd4d3d5bec0cd48753dfc38d0b1e9d7813bef46a.css?body=1" for ::1 at 2017-03-30 14:36:41 -0700
+Started GET "/sightings/get_sightings?start=2017-02-26&end=2017-04-09&_=1490909801876" for ::1 at 2017-03-30 14:36:42 -0700
+Processing by SightingsController#get_sightings as JSON
+  Parameters: {"start"=>"2017-02-26", "end"=>"2017-04-09", "_"=>"1490909801876"}
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/sightings/get_sightings?start=2017-01-29&end=2017-03-12&_=1490909801877" for ::1 at 2017-03-30 14:36:57 -0700
+Processing by SightingsController#get_sightings as JSON
+  Parameters: {"start"=>"2017-01-29", "end"=>"2017-03-12", "_"=>"1490909801877"}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/sightings/get_sightings?start=2017-01-01&end=2017-02-12&_=1490909801878" for ::1 at 2017-03-30 14:36:58 -0700
+Processing by SightingsController#get_sightings as JSON
+  Parameters: {"start"=>"2017-01-01", "end"=>"2017-02-12", "_"=>"1490909801878"}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/sightings/get_sightings?start=2017-01-29&end=2017-03-12&_=1490909801879" for ::1 at 2017-03-30 14:36:59 -0700
+Processing by SightingsController#get_sightings as JSON
+  Parameters: {"start"=>"2017-01-29", "end"=>"2017-03-12", "_"=>"1490909801879"}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sightings/get_sightings?start=2017-02-26&end=2017-04-09&_=1490909801880" for ::1 at 2017-03-30 14:36:59 -0700
+Processing by SightingsController#get_sightings as JSON
+  Parameters: {"start"=>"2017-02-26", "end"=>"2017-04-09", "_"=>"1490909801880"}
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/sightings" for ::1 at 2017-03-30 14:37:13 -0700
+Processing by SightingsController#index as HTML
+  Rendering sightings/index.html.erb within layouts/application
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered sightings/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 51ms (Views: 47.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/sightings/new" for ::1 at 2017-03-30 14:37:25 -0700
+Processing by SightingsController#new as HTML
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendering sightings/new.html.erb within layouts/application
+  Rendered sightings/_form.html.erb (5.3ms)
+  Rendered sightings/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sightings" for ::1 at 2017-03-30 14:37:27 -0700
+Processing by SightingsController#index as HTML
+  Rendering sightings/index.html.erb within layouts/application
+  [1m[36mSighting Load (0.5ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered sightings/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 50ms (Views: 47.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/animals" for ::1 at 2017-03-30 14:37:28 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 3]]
+  Rendered animals/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 1.3ms)
+
+

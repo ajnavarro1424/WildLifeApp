@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :sightings do
     get :get_sightings, on: :collection
   end
+
+  root "animals#index"
   resources :animals
 
   get 'calendar' => 'sightings#calendar'

@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -33,9 +32,8 @@ ActiveRecord::Schema.define(version: 20170315213900) do
     t.string   "region"
     t.float    "longitude"
     t.float    "latitude"
+    t.index ["animal_id"], name: "index_sightings_on_animal_id", using: :btree
   end
-
-  add_index "sightings", ["animal_id"], name: "index_sightings_on_animal_id", using: :btree
 
   add_foreign_key "sightings", "animals"
 end
